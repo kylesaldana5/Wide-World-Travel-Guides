@@ -1,0 +1,8 @@
+<input type="text" ng-model="bookStore">
+<ul>
+    <li ng-repeat="book in books | filter: {title: bookStore}">
+        <h3>{{book.title}}</h3>
+        <h5>Type: {{book.type}}</h5>
+        <h5>Price: {{book.price}}</h5>
+    </li>
+</ul>
